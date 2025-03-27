@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.header-content {
+    display: flex;
+    font-family: Signika Negative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.header-content h2 {
+    padding: 0;
+}
+
+
+.title {
+    font-family: Signika Negative;
+    font-weight: lighter;
+    color: #6e0b15;
+    font-size: 35px;
+    margin: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #a56f59;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: #6e0b15;
+}
+.contact {
+    margin-top: 40px;
+}
+
+.contact h2 {
+    font-family: Libre Bodoni;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.dots {
+    color: orange;
+    font-size: 18px;
+}
+
+form {
+    width: 50%;
+    margin: 10px auto;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Одинаковый радиус */
+    box-sizing: border-box; /* Учитывает padding в размерах */
+}
+
+button {
+    background-color: #f46530;
+    color: black;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.footerContent {
+    text-align: left;
+    line-height: 0.5
+}
+.footerContent h3 {
+    font-family: Signika Negative;
+    font-weight: normal;
+    font-size: 22px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    background-color: #f46530;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    
+}
