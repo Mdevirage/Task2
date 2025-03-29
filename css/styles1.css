@@ -57,7 +57,7 @@ main{
 
 /* Фоновая секция */
 .hero {
-    background-image: url("../img/Background.jpg");
+    background-image: url("../css/img/Background.jpg");
     background-size: cover;
     background-position: 0% 57%;
     background-repeat: no-repeat;
