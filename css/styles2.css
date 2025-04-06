@@ -1,13 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
     margin: 0;
-    padding: 0;
-    text-align: center;
+    height: 100vh;
 }
-
+.wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 header {
     background-color: #ffffff;
-    padding-bottom: 10px;
+    padding-top: 2px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .header-content {
@@ -35,10 +38,15 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
+
 }
 
 .menu ul li {
     margin-left: 20px;
+}
+.menu ul img {
+    margin-left: 12px;
 }
 
 .menu ul li a {
@@ -50,19 +58,23 @@ header {
 .menu ul li a:hover {
     color: #6e0b15;
 }
+
+
 .contact {
-    margin-top: 40px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .contact h2 {
     font-family: Libre Bodoni;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 43px;
+    margin: 5px;
 }
 
 .dots {
     color: orange;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 form {
@@ -70,60 +82,124 @@ form {
     margin: 10px auto;
 }
 
-input, textarea, button {
+input, textarea,button{
+    font-family: Arial, sans-serif;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 15px;
+    font-size: 17px;
     border: 1px solid #ccc;
     border-radius: 5px; /* Одинаковый радиус */
     box-sizing: border-box; /* Учитывает padding в размерах */
 }
+textarea {
+  height: 100px;
+}
 
-button {
+.contact button {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 15px;
     background-color: #f46530;
     color: black;
     border: none;
-    width: auto;
     cursor: pointer;
     font-size: 16px;
     font-weight: normal;
+    border-radius: 0px; /* Одинаковый радиус */
 }
 
 footer {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
-    padding: 20px;
+    align-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px 60px;
+    padding-bottom: 80px;
+    margin: 0px 10%;
+    font-size: 13px;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
 
-.footerContent {
-    text-align: left;
-    line-height: 0.5
-}
-.footerContent h3 {
-    font-family: Signika Negative;
+
+.footer-left h3 {
+    font-family: 'Signika Negative';
     font-weight: normal;
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
-.newsletter {
+
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: right;
+}
+
+.footer-menu {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.footer-menu a:hover {
+    color: #f46530;
+}
+
+.subscribe {
     display: flex;
+    align-items: center;       /* ← ВАЖНО: вертикальное выравнивание */
+    justify-content: flex-end;
+}
+
+.subscribe-icon {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: left;
-    margin-top: 10px;
-}
-
-.newsletter input {
-    padding: 10px;
-    width: 200px;
+    height: 45px;              /* ← Совпадает с input/button */
+    width: 40px;
+    background-color: #eee;
     border: 1px solid #ccc;
+    border-right: none;
     border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
-.newsletter button {
+.subscribe-icon img {
+    height: 16px;              /* Или auto */
+}
+
+.subscribe input {
+    padding: 8px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    height: 45px;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.subscribe button {
+    padding: 0 15px;
     background-color: #f46530;
-    padding: 10px;
+    font-size: 16px;
+    width: 130px;
+    height: 45px;
     border: none;
-    cursor: pointer;
     color: black;
-    
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+    background-color: #e05520;
 }
