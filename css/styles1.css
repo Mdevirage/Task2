@@ -3,18 +3,14 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
-/* Шапка */
-header {
-    background-color: #ffffff;
-    padding-bottom: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
 main{
     height: 95vh;
 }
-
+header {
+    background-color: #ffffff;
+    padding-top: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 .header-content {
     display: flex;
     font-family: Signika Negative;
@@ -25,6 +21,7 @@ main{
 .header-content h2 {
     padding: 0;
 }
+
 
 .title {
     font-family: Signika Negative;
@@ -39,10 +36,15 @@ main{
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
+
 }
 
 .menu ul li {
     margin-left: 20px;
+}
+.menu ul img {
+    margin-left: 12px;
 }
 
 .menu ul li a {

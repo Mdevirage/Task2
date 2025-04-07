@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  flex-direction: column;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+table {
+  width: 90vw;
+  height: 90vh;
+  border-collapse: collapse;           
+  table-layout: fixed;
+}
+
+td {
+  padding: 5px;
+  border: 2px solid black;  
+}
+
+.inner-border {
+  border: 3px solid #c6d7d9; 
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start; /* верхний край по вертикали */
+  justify-content: flex-start; /* левый край по горизонтали */
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+
+  word-break: break-word;
+}
+
+/* Стили шапки и меню (часть из твоего CSS) */
+header {
+  background-color: #ffffff;
+  padding-top: 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  font-family: Signika Negative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.title {
+  font-family: Signika Negative;
+  font-weight: lighter;
+  color: #6e0b15;
+  font-size: 35px;
+  margin: 5px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul img {
+  margin-left: 12px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #a56f59;
+  font-size: 16px;
+}
+
+.menu ul li a:hover {
+  color: #6e0b15;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;          /* Меню вертикально */
+    padding: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;          /* пункты вертикально */
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  table {
+    width: 98vw; 
+  }
+  .menu ul li {
+    margin-left: 0;                  /* сброс отступов слева */
+    margin-bottom: 8px;             /* добавим отступ снизу */
+  }
+
+  .menu ul li a {
+    font-size: 14px;
+  }
+
+  .menu ul img {
+    order: -1;
+    margin-left: 0;                   /* сброс отступа иконки */
+    margin-bottom: 8px;                /* отступ сверху иконки */
+  }
+
+  .title {
+    text-align: center;              /* заголовок по центру */
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .inner-border {
+    font-size: 12px;
+  }
+}
+
