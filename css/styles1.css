@@ -81,7 +81,7 @@ header {
     position: relative;
     background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
     max-width: 46vh;
-    min-height: 70vh;
+    min-height: 60vh;
     padding-right: 30px;
     padding-top: 50px;
     padding-left: 50px;
@@ -105,44 +105,45 @@ header {
 }
 
 .hero-text p {
-    font-size: 36px;
+    font-size: 37px;
     color: #444955;
 }
 
 
 @media (max-width: 1380px) {
     .hero-text p {
-        font-size: 60px;
+        font-size: 32px;
     }
     .hero-text h2 {
-        font-size: 130px;
+        font-size: 80px;
     }
 }
+
 @media (max-width: 1280px) {
     .section {
         height: 98%;
     }
     .hero-text h2 {
-        font-size: 90px;
+        font-size: 70px;
     }
     .hero-text p {
-        font-size: 36px;
+        font-size: 28px;
     }
-
 }
+
 @media (max-width: 1080px) {
     .underline {
-        width: 120px;
-        height: 7px;
+        width: 100px;
+        height: 6px;
     }
     .hero {
         background-position: center;
     }
     .hero-text p {
-        font-size: 60px;
+        font-size: 24px;
     }
     .hero-text h2 {
-        font-size: 130px;
+        font-size: 60px;
     }
     .block {
         min-height: 50vh;
@@ -150,47 +151,44 @@ header {
     .section {
         height: 90%;
         justify-content: center;
-        transform: translate(0px, 0px); /* Сдвигаем вправо и вверх */
+        transform: translate(0px, 0px);
     }
     .header-content {
-        display: flex;
         flex-direction: column;
     }
     .menu ul li a {
-        font-size: 30px;
+        font-size: 24px;
     }
     .title {
-        font-size: 45px;
+        font-size: 35px;
     }
 }
 
 @media (orientation: landscape) and (max-width: 1080px) {
-{
-   .underline {
+    .underline {
         width: 70px;
         height: 4px;
+        margin: 10px 0;
     }
     .hero {
         background-position: center;
     }
     .hero-text p {
-        font-size: 18px;
+        font-size: 17px;
     }
     .hero-text h2 {
-        font-size: 25px;
+        font-size: 22px;
     }
     .block {
-        max-height: 80vh;
+        max-height: 65vh;
         padding-top: 25px;
-        p
     }
     .section {
         height: 80%;
         justify-content: flex-end;
-        transform: translate(-25px, 0px); /* Сдвигаем вправо и вверх */
+        transform: translate(-25px, 0px);
     }
     .header-content {
-        display: flex;
         flex-direction: column;
     }
     .menu ul li a {
@@ -199,4 +197,37 @@ header {
     .title {
         font-size: 25px;
     } 
+}
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;          /* Меню становится вертикальным */
+  }
+
+  .menu ul {
+    flex-direction: column;          /* Пункты меню вертикально */
+    align-items: center;
+    margin-top: 9px;
+    padding: 0;
+  }
+
+  .menu ul li {
+    margin-left: 0;                  /* Убираем горизонтальные отступы */
+    margin-bottom: 8px;              /* Добавляем вертикальные отступы между пунктами */
+  }
+
+  .menu ul li a {
+    font-size: 14px;                 /* Уменьшаем шрифт для мобильных */
+  }
+
+  .menu ul img {
+    order: -1;                       /* Перемещаем иконку наверх */
+    margin-left: 0;                  
+    margin-bottom: 8px;              
+  }
+
+  .title {
+    text-align: center;              /* Заголовок по центру */
+    font-size: 25px;                 /* Уменьшаем заголовок */
+    margin-bottom: 0;
+  }
 }
