@@ -23,8 +23,6 @@ header {
     padding: 0 20px;
 }
 
-
-
 .title {
     font-family: Signika Negative;
     font-weight: lighter;
@@ -203,3 +201,4 @@ footer {
 .subscribe button:hover {
     background-color: #e05520;
 }
+
