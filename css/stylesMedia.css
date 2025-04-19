@@ -8,7 +8,6 @@
   }
   .header-content {
     flex-direction: column;          /* Меню вертикально */
-    padding: 10px;
   }
 
   .menu ul {
@@ -36,8 +35,7 @@
 
   .title {
     text-align: center;              /* заголовок по центру */
-    font-size: 30px;
-    margin-bottom: 0px;
+    font-size: 35px;
   }
   table {
     width: 98vw; 

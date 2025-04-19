@@ -115,7 +115,7 @@ header {
     }
 
     .menu ul {
-        flex-direction: column;          
+        flex-direction: row-reverse;          
         justify-content: center;
         margin-top: 12px;
         gap: 5%;

@@ -37,7 +37,6 @@ header {
     margin: 0;
     display: flex;
     align-items: center;
-
 }
 
 .menu ul li {
@@ -80,7 +79,7 @@ form {
     margin: 10px auto;
 }
 
-input, textarea,button{
+input,textarea,button{
     font-family: Arial, sans-serif;
     width: 100%;
     padding: 15px;
@@ -92,6 +91,7 @@ input, textarea,button{
 }
 textarea {
     height: 100px;
+    resize: none
 }
 
 .contact button {
