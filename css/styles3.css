@@ -64,6 +64,7 @@ header {
   color: #6e0b15;
   font-size: 35px;
   margin: 5px;
+  white-space: nowrap;
 }
 
 .menu ul {
@@ -92,26 +93,26 @@ header {
   color: #6e0b15;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 615px) {
   .header-content {
     flex-direction: column;          /* Меню вертикально */
     padding: 10px;
   }
 
   .menu ul {
-    flex-direction: column;          /* пункты вертикально */
-    align-items: center;
+    flex-direction: row-reverse;          /* пункты вертикально */
+    justify-content: center;
     margin-top: 12px;
+    gap: 5%;
   }
 
-  
   .menu ul li {
     margin-left: 0;                  /* сброс отступов слева */
     margin-bottom: 8px;             /* добавим отступ снизу */
   }
 
   .menu ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .menu ul img {
@@ -122,7 +123,7 @@ header {
 
   .title {
     text-align: center;              /* заголовок по центру */
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 0px;
   }
   table {

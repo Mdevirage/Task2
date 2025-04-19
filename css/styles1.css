@@ -8,59 +8,61 @@ main{
 }
 /* Стили шапки и меню (часть из твоего CSS) */
 header {
-  background-color: #ffffff;
-  padding-top: 2px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  width: 100%;
+    background-color: #ffffff;
+    padding-top: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
 .header-content {
-  display: flex;
-  font-family: Signika Negative;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+    display: flex;
+    font-family: Signika Negative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
 }
 
 .title {
-  font-family: Signika Negative;
-  font-weight: lighter;
-  color: #6e0b15;
-  font-size: 35px;
-  margin: 5px;
+    font-family: Signika Negative;
+    font-weight: lighter;
+    color: #6e0b15;
+    font-size: 35px;
+    margin: 5px;
+    white-space: nowrap;
 }
 
 .menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .menu ul li {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 .menu ul img {
-  margin-left: 12px;
+    margin-left: 12px;
 }
 
 .menu ul li a {
-  text-decoration: none;
-  color: #a56f59;
-  font-size: 16px;
+    text-decoration: none;
+    color: #a56f59;
+    font-size: 16px;
 }
 
 .menu ul li a:hover {
-  color: #6e0b15;
+    color: #6e0b15;
 }
 
 /* Фоновая секция */
 .hero {
     background-image: url("../css/img/Background.jpg");
     background-size: cover;
-    background-position: 0% 57%;
+    background-position: 0% 58%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -73,12 +75,12 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    transform: translate(-25px, 0px); /* Сдвигаем вправо и вверх */
+    transform: translate(-25px, 0px); 
 }
 
 .block{
     position: relative;
-    background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+    background: rgba(255, 255, 255, 0.8); 
     max-width: 46vh;
     min-height: 60vh;
     padding-right: 30px;
@@ -104,129 +106,48 @@ header {
 }
 
 .hero-text p {
-    font-size: 37px;
+    font-size: 36px;
     color: #444955;
 }
-
-
-@media (max-width: 1380px) {
-    .hero-text p {
-        font-size: 32px;
-    }
-    .hero-text h2 {
-        font-size: 80px;
-    }
-}
-
-@media (max-width: 1280px) {
-    .section {
-        height: 98%;
-    }
-    .hero-text h2 {
-        font-size: 70px;
-    }
-    .hero-text p {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 1080px) {
-    .underline {
-        width: 100px;
-        height: 6px;
-    }
-    .hero {
-        background-position: center;
-    }
-    .hero-text p {
-        font-size: 24px;
-    }
-    .hero-text h2 {
-        font-size: 60px;
-    }
-    .block {
-        min-height: 50vh;
-    }
-    .section {
-        height: 90%;
-        justify-content: center;
-        transform: translate(0px, 0px);
-    }
+@media (max-width: 630px) {
     .header-content {
-        flex-direction: column;
+        flex-direction: column;         
     }
-    .menu ul li a {
-        font-size: 24px;
-    }
-    .title {
-        font-size: 35px;
-    }
-}
 
-@media (orientation: landscape) and (max-width: 1080px) {
-    .underline {
-        width: 70px;
-        height: 4px;
-        margin: 10px 0;
+    .menu ul {
+        flex-direction: column;          
+        justify-content: center;
+        margin-top: 12px;
+        gap: 5%;
     }
-    .hero {
-        background-position: center;
+
+    .menu ul li {
+        margin-left: 0;                  
+        margin-bottom: 8px;              
     }
-    .hero-text p {
-        font-size: 17px;
-    }
-    .hero-text h2 {
-        font-size: 22px;
-    }
-    .block {
-        max-height: 65vh;
-        padding-top: 25px;
+
+    .menu ul li a {
+        font-size: 16px;                 
     }
     .section {
         height: 80%;
-        justify-content: flex-end;
-        transform: translate(-25px, 0px);
+        justify-content: center;
+        transform: translate(0px, 0px);
     }
-    .header-content {
-        flex-direction: column;
+    .menu ul img {
+        order: -1;                       
+        margin-left: 0;                  
+        margin-bottom: 8px;              
     }
-    .menu ul li a {
-        font-size: 18px;
-    }
-    .title {
+     .hero-text p {
         font-size: 25px;
-    } 
-}
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;          /* Меню становится вертикальным */
-  }
+    }
+    .hero-text h2 {
+        font-size: 65px;
 
-  .menu ul {
-    flex-direction: column;          /* Пункты меню вертикально */
-    align-items: center;
-    margin-top: 9px;
-    padding: 0;
-  }
-
-  .menu ul li {
-    margin-left: 0;                  /* Убираем горизонтальные отступы */
-    margin-bottom: 8px;              /* Добавляем вертикальные отступы между пунктами */
-  }
-
-  .menu ul li a {
-    font-size: 14px;                 /* Уменьшаем шрифт для мобильных */
-  }
-
-  .menu ul img {
-    order: -1;                       /* Перемещаем иконку наверх */
-    margin-left: 0;                  
-    margin-bottom: 8px;              
-  }
-
-  .title {
-    text-align: center;              /* Заголовок по центру */
-    font-size: 25px;                 /* Уменьшаем заголовок */
-    margin-bottom: 0;
-  }
+    .title {
+        text-align: center;              
+        font-size: 30px;                 
+        margin-bottom: 0;
+    }
 }
